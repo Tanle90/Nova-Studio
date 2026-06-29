@@ -1,0 +1,288 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:#fff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:28px 10%;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(15,23,42,.7);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+.logo{
+font-size:1.6rem;
+font-weight:700;
+}
+
+nav{
+display:flex;
+gap:32px;
+}
+
+nav a{
+opacity:.8;
+transition:.3s;
+}
+
+nav a:hover{
+opacity:1;
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:0 10%;
+background:
+radial-gradient(circle at top left,#3b82f655,transparent 40%),
+radial-gradient(circle at bottom right,#06b6d455,transparent 40%);
+}
+
+.hero-content{
+max-width:700px;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.1rem;
+color:#cbd5e1;
+line-height:1.8;
+margin-bottom:40px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+background:#38bdf8;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+color:#0f172a;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(56,189,248,.4);
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:60px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:35px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#26364f;
+}
+
+.card h3{
+margin-bottom:16px;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.7;
+}
+
+.cta{
+text-align:center;
+padding:120px 10%;
+background:#111827;
+}
+
+.cta h2{
+font-size:2.6rem;
+margin-bottom:20px;
+}
+
+.cta p{
+color:#cbd5e1;
+margin-bottom:35px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#94a3b8;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+@media(max-width:768px){
+
+header{
+padding:20px;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:2.6rem;
+}
+
+.title{
+font-size:2rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Nova Studio</div>
+
+<nav>
+<a href="/">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Beautiful Websites Built For Modern Businesses</h1>
+
+<p>
+We create clean, responsive websites that help brands stand out,
+build trust, and convert visitors into customers.
+</p>
+
+<a class="btn" href="#">Start Your Project</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">What We Do</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Responsive Design</h3>
+<p>Optimized for desktop, tablet and mobile devices with a seamless user experience.</p>
+</div>
+
+<div class="card">
+<h3>Fast Performance</h3>
+<p>Lightweight code, optimized assets and fast loading times for better SEO.</p>
+</div>
+
+<div class="card">
+<h3>Modern UI</h3>
+<p>Elegant layouts with attention to typography, spacing and accessibility.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Recent Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Coffee Landing Page</h3>
+<p>Brand-focused website with menu showcase and online ordering.</p>
+</div>
+
+<div class="card">
+<h3>Fitness Studio</h3>
+<p>Responsive landing page featuring memberships and booking forms.</p>
+</div>
+
+<div class="card">
+<h3>Creative Agency</h3>
+<p>Minimal portfolio built with clean animations and optimized performance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Let's Build Something Great</h2>
+
+<p>Available for freelance projects worldwide.</p>
+
+<a class="btn" href="mailto:hello@example.com">Contact Me</a>
+
+</section>
+
+<footer>
+
+© 2026 Nova Studio. Built with HTML & CSS.
+
+</footer>
+
+</body>
+</html>
+```
